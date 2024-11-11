@@ -1,11 +1,17 @@
 public enum Direccion {
     NORESTE("Noreste"),
     SURESTE("Sureste"),
-    NOROESTE("Noroeste"),
     SUROESTE("Suroeste"),
-    ;
+    NOROESTE("Noroeste");
 
-    private String toString() {
-        return "Direccion{}";
+    private final String cadenaAMostrar;
+
+    private Direccion(String cadenaAMostrar) {
+        this.cadenaAMostrar = cadenaAMostrar;
+    }
+
+    @Override
+    public String toString() {
+        return this.cadenaAMostrar;
     }
 }
