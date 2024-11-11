@@ -7,9 +7,6 @@ public class Posicion {
         setColumna(columna);
     }
 
-    // Métodos get y set anteriores...
-}
-
     public int getFila() {
         return fila;
     }
